@@ -7,7 +7,9 @@ gem 'rails', '3.1.0'
 
 gem 'pg'
 
+
 group :development do
+  gem 'autotest'
   gem 'rspec-rails', '2.8.0'
 end
 
