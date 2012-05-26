@@ -5,17 +5,24 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+
 
 
 group :development do
+  gem 'sqlite3'
   gem 'autotest'
   gem 'rspec-rails', '2.8.0'
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'rspec', '2.8.0'
 end
+
+group :production do
+gem 'pg'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
